@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Login and Signup</title>
+        <link rel="stylesheet" type="text/css" href="ls.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <body>
+            <div class="cont">
+              <div class="form sign-in">
+                <h2>Sign In</h2>
+                <label>
+                  <span>Email Address</span>
+                  <input type="email" name="email" id="signin_email">
+                  <div id="errorL_email" class="error">enter your correct email</div>
+                </label>
+                <label>
+                  <span>Password</span>
+                  <input type="password" name="password" id="signin_password">
+                  <div id="errorL_password" class="error">enter your correct password</div>
+                </label>
+                <button class="submit" type="button" onclick="validationSignin()">Sign In</button>
+                <p class="forgot-pass"><a href="frogotpage/froget.html">Forgot Password ?</a></p>
+          
+                <div class="social-media">
+                  <ul>
+                    <li><li href="#"><img src="image/fb.png"></img></li>
+          
+                    <li><a href="#"></a><img src="image/inster.png"></a></li>
+                    <li><a href="#"></a><img src="image/massenger.png"></a></li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="sub-cont">
+                <div class="img">
+                  <div class="img-text m-up">
+                    <h2>New here?</h2>
+                    <p>Sign up and discover great amount of new opportunities!</p>
+                  </div>
+                  <div class="img-text m-in">
+                    <h2>One of us?</h2>
+                    <p>If you already has an account, just sign in. We've missed you!</p>
+                  </div>
+                  <div class="img-btn">
+                    <span class="m-up">Sign Up</span>
+                    <span class="m-in">Sign In</span>
+                  </div>
+                </div>
+                <div class="form sign-up">
+                  <h2>Sign Up</h2>
+                  <label>
+                    <span>Name</span>
+                    <input type="text" id="name">
+                    <div id="error_name" class="error">please enter your name</div>
+                  </label>
+                  <label>
+                    <span>Email</span>
+                    <input type="email" id="email">
+                    <div id="error_email" class="error">please enter your email </div>
+                  </label>
+                  <label>
+                    <span>Password</span>
+                    <input type="password" id="password">
+                    <div id="error_password" class="error">please enter your password </div>
+                  </label>
+                  <label>
+                    <span>Confirm Password</span>
+                    <input type="password" id="c_password">
+                    <div id="error_cpassword" class="error">not match this password </div>
+                  </label>
+                  <button type="button" class="submit" onclick="validationSignup()">Sign Up Now</button>
+                </div>
+              </div>
+            </div>
+          <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>
